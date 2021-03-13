@@ -1,0 +1,36 @@
+{
+    "name": "bluecloud/sms-queue",
+    "description": "Sms Queue",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BlueCloud Solutions",
+            "email": "info@bluecloud.africa"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bluecloud\\SmsQueue\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php vendor/bin/testbench package:discover --ansi"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bluecloud\\SmsQueue\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bluecloud\\SmsQueue\\SmsQueueServiceProvider"
+            ]
+        }
+    }
+}
