@@ -6,7 +6,13 @@ DISCLAIMER This package does not handle the actual sending of the messages to th
 
 ## Quick Guide
 
-First, run the migrations to create sms queue table
+Install the package via composer
+
+```terminal
+composer require bluecloud/sms-queue
+```
+
+Run the migrations to create sms queue table
 ```terminal
 php artisan migrate
 ```
