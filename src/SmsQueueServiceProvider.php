@@ -33,6 +33,14 @@ class SmsQueueServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/config/sms-queue.php' => config_path('sms-queue.php'),
         ]);
+        $this->publishes([
+            __DIR__.'/config/sms-queue.php' => config_path('sms-queue.php')
+        ], 'config');
+
+        $this->publishes([
+            __DIR__.'/database/migrations/' => database_path('migrations')
+        ], 'migrations');
+
         if ($this->app->runningInConsole()) {
             $this->commands([
                 SmsDeliveryCommand::class,
