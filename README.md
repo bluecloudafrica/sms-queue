@@ -26,7 +26,7 @@ one-time limit use `php artisan sms:send --limit=10`
 
 You can schedule the messages to be sent at an interval with Laravel Scheduler
 
-```injectablephp
+```php
 // app/Console/Kernel.php
 
 use Illuminate\Console\Scheduling\Schedule;
