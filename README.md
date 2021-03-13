@@ -46,4 +46,12 @@ class Kernel extends ConsoleKernel
     }
 }
 
+### Configuration
+To set your config, create the following entries in your env file and replace the default values as desired
+
+SMS_QUEUE_DELIVERIES_PER_BATCH=100
+SMS_QUEUE_MESSENGER_URL=http://localhost
+
+You can also publish the config with `php artisan vendor:publish` and choose `Bluecloud\SmsQueue\SmsQueueServiceProvider` from the list
+
 ```
