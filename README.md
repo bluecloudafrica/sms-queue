@@ -1,5 +1,9 @@
 # Sms Queue
 
+Queue messages from your Laravel app to your SMS API. 
+
+DISCLAIMER This package does not handle the actual sending of the messages to the recepient. You will need an SMS solution for that. This will however ease the task of scheduling and queueing an SMS from anywhere in your code
+
 ## Quick Guide
 
 First, run the migrations to create sms queue table
