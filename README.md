@@ -13,6 +13,7 @@ php artisan migrate
 use Bluecloud\SmsQueue\Models\Message;
 
 Message::queue('0888800800', 'Test message');
+Message::queue('0888800800', 'Test message', '2021-03-13 09:30:00');
 ```
 
 ### Sending messages
