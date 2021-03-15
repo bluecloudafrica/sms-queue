@@ -11,7 +11,10 @@ Install the package via composer
 ```terminal
 composer require bluecloud/sms-queue
 ```
-
+Publish package service provider
+```terminal
+php artisan vendor:publish --provider=Bluecloud\SmsQueue\SmsQueueServiceProvider
+```
 Run the migrations to create sms queue table
 ```terminal
 php artisan migrate
@@ -61,4 +64,3 @@ SMS_QUEUE_DELIVERIES_PER_BATCH=100
 
 SMS_QUEUE_MESSENGER_URL=http://localhost
 ```
-You can also publish the config with `php artisan vendor:publish` and choose `Bluecloud\SmsQueue\SmsQueueServiceProvider` from the list
