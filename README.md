@@ -35,8 +35,8 @@ Message::queue('0888800800', 'Test message', '2021-03-13 09:30:00');
 php artisan sms:send
 ```
 
-To limit the number of messages to send per batch set the env variable `SMS_QUEUE_DELIVERIES_PER_BATCH`. To set a
-one-time limit use `php artisan sms:send --limit=10`
+To limit the number of messages to send per batch set the env variable `SMS_QUEUE_DELIVERIES_PER_BATCH`. 
+To set a one-time limit use `php artisan sms:send --limit=10`
 
 You can schedule the messages to be sent at an interval with Laravel Scheduler
 
